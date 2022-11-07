@@ -1,0 +1,285 @@
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Medium.ttf");
+}
+*::before, *::after , *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+.body{
+    background: rgb(18, 17, 17);
+    color: #fff;
+    transition: 0.5s ease;
+}
+.header__text{
+    width: 20%;
+    padding: 0.5rem;
+    letter-spacing: 3px;
+    text-align: center;
+}
+.header__text p{
+    padding-top: 1rem;
+}
+.container{
+    width: 1300px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+header{
+    padding: 1rem;
+}
+.nav{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.region__title{
+    font-size: 30px;
+}
+.nav__title h1{
+    font-size: 40px;
+}
+.nav__title h4{
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}   
+form input, form button{
+    padding: 0.5rem 1rem;
+    font-size: 17px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    outline: 3px solid transparent;
+    margin: 0.5rem;
+    transition: all 0.5s ease;
+}
+form input:focus, form button:hover{
+    outline: 3px solid slategrey;
+}
+.hero{
+    padding-top: 2rem;
+    width: 100%;
+}
+.hero__cards{
+    display: grid ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.cards__card{
+    padding: 1rem;
+    text-align: center;
+}
+.cards__card h5{
+    font-size: 100px;
+}
+.cards__card h4{
+    padding: 1rem;
+    font-size: 30px;
+}
+img{
+    padding: 1rem;
+    width: 200px;
+    object-fit: contain;
+    height: 200px;
+    border-radius: 50%;
+    /* border: 1px solid #fff; */
+}
+.hero__text{
+    text-align: center;
+    letter-spacing: 2px;
+}
+.error{
+    display: none;
+}
+.error__text{
+    color: crimson;
+}
+.block{
+    display: flex;
+    justify-content: center;
+    min-height: 40vh;
+    text-align: center;
+    align-items: center;
+}
+input[type="checkbox"]{
+    appearance: none;
+    width: 50px;
+    height: 20px;
+    background: black;
+    border-radius: 10px;
+}
+input[type="checkbox"]::before{
+    content:  " ";
+    display: inline-block;
+    appearance: none;
+    width: 30px;
+    height: 20px;
+    background: url("../images/—Pngtree—grey\ moon\ free\ illustration_4452211.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+input[type="checkbox"]:checked::before{
+    margin-left: 25px;
+    background-image: url("../images/asir.png");
+    background-size: cover;
+    width: 30px;
+    height: 20px;
+}
+.whites{
+    background: rgba(128, 128, 128, 0.421);
+    color: #000;
+}
+@media only screen and (max-width: 1200px){
+    .container{
+        max-width: 1000px;
+    }
+    .hero__cards{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 1033px){
+    .container{
+        max-width: 900px;
+    }
+    .hero__cards{
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}
+@media only screen and (max-width: 933px){
+    .container{
+        max-width: 850px;
+    }
+    .hero__cards{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+@media only screen and (max-width: 883px){
+    .container{
+        max-width: 780px;
+    }
+    .hero__cards{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+@media only screen and (max-width: 813px){
+    .container{
+        max-width: 710px;
+    }
+    .hero__cards{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+@media only screen and (max-width: 743px){
+    .container{
+        max-width: 670px;
+    }
+    .hero__cards{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+@media only screen and (max-width: 703px){
+    .container{
+        max-width: 615px;
+    }
+    .hero__cards{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+@media only screen and (max-width: 650px){
+    .container{
+        max-width: 550px;
+    }
+    .hero__cards{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+@media only screen and (max-width: 604px){
+    .error__text{
+        font-size: 27px;
+    }
+}
+@media only screen and (max-width: 584px){
+    .container{
+        max-width: 480px;
+    }
+    .hero__cards{
+        grid-template-columns: 1fr ;
+        /* padding-right: 2rem; */
+    }
+}
+@media only screen and (max-width: 514px){
+    .container{
+        max-width: 415px;
+    }
+    .hero__cards{
+        grid-template-columns: 1fr ;
+    }
+    .error__text{
+        font-size: 21px;
+    }
+}
+@media only screen and (max-width: 449px){
+    .container{
+        max-width: 360px;
+    }
+    .hero__cards{
+        grid-template-columns: 1fr ;
+    
+    }
+    .error__text{
+        font-size: 21px;
+    }
+    .nav__title h1{
+        font-size: 30px;
+    }
+    .region__title{
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 401px) {
+    .container{
+        max-width: 300px;
+    }
+    .cards__card h4{
+        font-size: 24px;
+    }
+    .nav{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    form input{
+        /* padding: 0.5rem; */
+    }
+}
+@media only screen and (max-width: 389px) {
+    .container{
+        max-width: 300px;
+    }
+    .error__text{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 370px) {
+    .container{
+        max-width: 250px;
+    }
+    .error__text{
+        font-size: 18px;
+    }
+    .hero__cards{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+}
+@media only screen and (max-width: 365px) {
+    .container{
+        max-width: 200px;
+    }
+}

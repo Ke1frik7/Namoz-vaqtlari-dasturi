@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="body">
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="nav__title">
+                    <h1>Namoz vaqtlari</h1>
+                    <h4 class="region__title">Samarqand</h4>
+                    <h4>Hafta kuni =  <span class="hafta__kun"> </span></h4>
+                    <form class="nav__form">
+                        <input type="text" placeholder="Joylashuvingizni kiriting ... " class="nav__input">
+                        <button class="nav__btn">Yuborish   </button>
+                    </form>
+                </div>
+                <div class="nav__kunduz">
+                    <input type="checkbox" class="checkbox" >
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="error">
+        <h1 class="error__text">Joylashuv nomini notugri kiritdingiz</h1>
+    </div>
+    
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__cards">
+                    <template>
+                        <div class="cards__card">
+                            <h2>Bomdod</h2>
+                            <img src="./images/sun-9624.png" alt="">
+                            <h4>Vaqt = <span class="bomdod__vaqt">0</span></h4>
+                        </div>
+                        <div class="cards__card">
+                            <h2>Peshin</h2>
+                            <img src="./images/peshin.png" alt="">
+                            <h4>Vaqt = <span class="peshin__vaqt">0</span></h4>
+                        </div>
+                        <div class="cards__card">
+                            <h2>Asr</h2>
+                            <img src="./images/asir.png" alt="">
+                            <h4>Vaqt = <span class="asr__vaqt">0</span></h4>
+                        </div>
+                        <div class="cards__card">
+                            <h2>Shom</h2>
+                            <img src="./images/pngwing.com (2).png" alt="">
+                            <h4>Vaqt = <span class="shom__vaqt">0</span></h4>
+                        </div>
+                        <div class="cards__card">
+                            <h2>Hufton</h2>
+                            <img src="./images/—Pngtree—grey moon free illustration_4452211.png" alt="">
+                            <h4>Vaqt = <span class="hufton__vaqt">0</span></h4>
+                        </div>
+                    </template>
+                </div>
+                <div class="hero__text">
+                    <h3>Quyosh chiqishi = <span class="quyosh__chiqishi"></span> </h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./Javascript/axios.js"></script>
+    <script src="./Javascript/utils.js"></script>
+    <script src="./Javascript/main.js"></script>
+</body>
+</html>
